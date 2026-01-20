@@ -1,2 +1,288 @@
 
 StressLvl = 0
+print("intro")
+
+def generalgood() :
+    print("Yippie you escaped!")
+
+def jailbad() :
+    print("Oh no YOU go to jail..")
+
+def generalbad() :
+    print("Oh no that failed")
+    
+def gardenwin() :
+    print("You hid the bodyyyyy!")
+    
+def forestwin() :
+    print("You hid the bodddyyyy!")
+    
+def ducttapewin() :
+    print("You tied him uppp!!")
+    
+def jumpoutwin() :
+    print("You escaped the thief!!")
+    
+def bedroomcos() :
+     choice = input("choose A[Hide in the closet] B[Jump out the window]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            jumpoutwin()
+    else :
+        print("Oops invaild option.. Try again..")
+    
+def lookkey() :
+     choice = input("choose A[The bag in the corridor] B[Bedroom]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            bedroomcos()
+    else :
+        print("Oops invaild option.. Try again..")
+    
+def tieup() :
+     choice = input("choose A[With the curtains] B[With duct tape]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            ducttapewin()
+    else :
+        print("Oops invaild option.. Try again..")
+    
+def houseescape() :
+     choice = input("choose A[The window] B[The Door]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            lookkey()
+
+    else :
+        print("Oops invaild option.. Try again..")
+    
+def hidethebody() :
+    choice = input("choose A[In the garden] B[In the forest]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            gardenwin()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            forestwin()
+    else :
+        print("Oops invaild option.. Try again..")
+    
+def kitchenkab() :
+    choice = input("choose A[Call the police] B[Hide the body]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            jailbad()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            hidethebody()
+    else :
+        print("Oops invaild option.. Try again..")
+
+def bathroomchoice() :
+     choice = input("choose A[Escape through the window] B[Call the police]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalgood()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    else :
+        print("Oops invaild option.. Try again..")
+
+    
+def hidechoice() :
+    choice = input("choose A[Hide in the closet] B[Hide in the bathroom] C[Behind a kitchen cabinet] D['If I can't see him, he can't see me'] :")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            bathroomchoice()
+    elif choice == "C" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            kitchenkab()
+    elif choice == "D" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            hidethebody()
+    else :
+        print("Oops invaild option.. Try again..")
+
+def phoneopt() :
+    choice = input("choose A[Go hide to call the police] B[Throw it at the thief's head]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+    else :
+        print("Oops invaild option.. Try again..")
+
+def concusiongun() :
+    choice = input("choose A[Run away from the house] B[Tie the thief up]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            houseescape()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            tieup()
+    else :
+        print("Oops invaild option.. Try again..")
+
+def umbrellaopt() :
+    choice = input("choose A[Hit the thief in the head] B[Hit the thief in the legs] C[Open it]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            concusiongun()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    elif choice == "C" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            hidechoice()
+    else :
+        print("Oops invaild option.. Try again..")
+
+def crazyend() :
+    print("You obtained the Crazy ending")
+    
+def justgun() :
+    choice = input("choose A[Shoot the thief] B[Throw it at the thief's head]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            generalbad()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            concusiongun()
+    else :
+        print("Oops invaild option.. Try again..")
+        
+        
+def whattobring() :
+    choice = input("choose A[A gun] B[A phone] C[An umbrella] :")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            justgun()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            phoneopt()
+    elif choice == "C" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            umbrellaopt()
+    else :
+        print("Oops invaild option.. Try again..")
+
+while True :
+    choice = input("choose A[Ignore] B[Investigate] C[Call the police] :")
+    if choice == "A" :
+        print("text")
+        whattobring()
+    elif choice == "B" :
+        print("text")
+        whattobring()
+    elif choice == "C" :
+        crazyend()
+    else :
+        print("Oops invalid option.. Try again..")
+    
+
