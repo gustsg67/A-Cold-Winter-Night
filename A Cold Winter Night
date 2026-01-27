@@ -1,6 +1,5 @@
 
-StressLvl = 0
-print("intro")
+currg = "A"
 
 def generalgood() :
     print("Yippie you escaped!")
@@ -8,23 +7,31 @@ def generalgood() :
 def jailbad() :
     print("Oh no YOU go to jail..")
 
+
 def generalbad() :
     print("Oh no that failed")
+
     
 def gardenwin() :
     print("You hid the bodyyyyy!")
+
     
 def forestwin() :
     print("You hid the bodddyyyy!")
+
     
 def ducttapewin() :
     print("You tied him uppp!!")
+
     
 def jumpoutwin() :
     print("You escaped the thief!!")
-    
+
+def crazyend() :
+    print("You obtained the Crazy ending")
+
 def bedroomcos() :
-     choice = input("choose A[Hide in the closet] B[Jump out the window]")
+    choice = input("choose A[Hide in the closet] B[Jump out the window]")
     if choice == "A" :
         if StressLvl >= 3 :
             print("Oh no you heart attack")
@@ -39,9 +46,10 @@ def bedroomcos() :
             jumpoutwin()
     else :
         print("Oops invaild option.. Try again..")
+        bedroomcos()
     
 def lookkey() :
-     choice = input("choose A[The bag in the corridor] B[Bedroom]")
+    choice = input("choose A[The bag in the corridor] B[Bedroom]")
     if choice == "A" :
         if StressLvl >= 3 :
             print("Oh no you heart attack")
@@ -56,9 +64,10 @@ def lookkey() :
             bedroomcos()
     else :
         print("Oops invaild option.. Try again..")
+        lookkey()
     
 def tieup() :
-     choice = input("choose A[With the curtains] B[With duct tape]")
+    choice = input("choose A[With the curtains] B[With duct tape]")
     if choice == "A" :
         if StressLvl >= 3 :
             print("Oh no you heart attack")
@@ -73,9 +82,10 @@ def tieup() :
             ducttapewin()
     else :
         print("Oops invaild option.. Try again..")
+        tieup()
     
 def houseescape() :
-     choice = input("choose A[The window] B[The Door]")
+    choice = input("choose A[The window] B[The Door]")
     if choice == "A" :
         if StressLvl >= 3 :
             print("Oh no you heart attack")
@@ -91,6 +101,7 @@ def houseescape() :
 
     else :
         print("Oops invaild option.. Try again..")
+        houseescape()
     
 def hidethebody() :
     choice = input("choose A[In the garden] B[In the forest]")
@@ -108,6 +119,7 @@ def hidethebody() :
             forestwin()
     else :
         print("Oops invaild option.. Try again..")
+        hidethebody()
     
 def kitchenkab() :
     choice = input("choose A[Call the police] B[Hide the body]")
@@ -125,9 +137,10 @@ def kitchenkab() :
             hidethebody()
     else :
         print("Oops invaild option.. Try again..")
+        kitchenkab()
 
 def bathroomchoice() :
-     choice = input("choose A[Escape through the window] B[Call the police]")
+    choice = input("choose A[Escape through the window] B[Call the police]")
     if choice == "A" :
         if StressLvl >= 3 :
             print("Oh no you heart attack")
@@ -142,6 +155,7 @@ def bathroomchoice() :
             generalbad()
     else :
         print("Oops invaild option.. Try again..")
+        bathroomchoice()
 
     
 def hidechoice() :
@@ -172,21 +186,7 @@ def hidechoice() :
             hidethebody()
     else :
         print("Oops invaild option.. Try again..")
-
-def phoneopt() :
-    choice = input("choose A[Go hide to call the police] B[Throw it at the thief's head]")
-    if choice == "A" :
-        if StressLvl >= 3 :
-            print("Oh no you heart attack")
-        else :
-            print("text")
-    elif choice == "B" :
-        if StressLvl >= 3 :
-            print("Oh no you heart attack")
-        else :
-            print("text")
-    else :
-        print("Oops invaild option.. Try again..")
+        hidechoice()
 
 def concusiongun() :
     choice = input("choose A[Run away from the house] B[Tie the thief up]")
@@ -204,6 +204,25 @@ def concusiongun() :
             tieup()
     else :
         print("Oops invaild option.. Try again..")
+        concusiongun()
+        
+def phoneopt() :
+    choice = input("choose A[Go hide to call the police] B[Throw it at the thief's head]")
+    if choice == "A" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            hidechoice()
+    elif choice == "B" :
+        if StressLvl >= 3 :
+            print("Oh no you heart attack")
+        else :
+            print("text")
+            concusiongun()
+    else :
+        print("Oops invaild option.. Try again..")
+        phoneopt()
 
 def umbrellaopt() :
     choice = input("choose A[Hit the thief in the head] B[Hit the thief in the legs] C[Open it]")
@@ -227,9 +246,8 @@ def umbrellaopt() :
             hidechoice()
     else :
         print("Oops invaild option.. Try again..")
+        umbrellaopt()
 
-def crazyend() :
-    print("You obtained the Crazy ending")
     
 def justgun() :
     choice = input("choose A[Shoot the thief] B[Throw it at the thief's head]")
@@ -247,6 +265,7 @@ def justgun() :
             concusiongun()
     else :
         print("Oops invaild option.. Try again..")
+        justgun()
         
         
 def whattobring() :
@@ -271,18 +290,41 @@ def whattobring() :
             umbrellaopt()
     else :
         print("Oops invaild option.. Try again..")
+        whattobring()
 
 while True :
-    choice = input("choose A[Ignore] B[Investigate] C[Call the police] :")
-    if choice == "A" :
-        print("text")
-        whattobring()
-    elif choice == "B" :
-        print("text")
-        whattobring()
-    elif choice == "C" :
-        crazyend()
-    else :
-        print("Oops invalid option.. Try again..")
     
+    if currg != "A" :
+        contin = input("Do you wish to rewrite your destiny and try again from the begining? Y/N?")
+        if contin != "Y" or "y" :
+            break
+        else :
+            print("intro")
+            StressLvl = 0
+            choice = input("choose A[Ignore] B[Investigate] C[Call the police] :")
+            if choice == "A" :
+                print("text")
+                whattobring()
+            elif choice == "B" :
+                print("text")
+                whattobring()
+            elif choice == "C" :
+                crazyend()
+            else :
+                print("Oops invalid option.. Try again..")
+    else :
+        print("intro")
+        StressLvl = 0
+        currg = "B"
+        choice = input("choose A[Ignore] B[Investigate] C[Call the police] :")
+        if choice == "A" :
+            print("text")
+            whattobring()
+        elif choice == "B" :
+            print("text")
+            whattobring()
+        elif choice == "C" :
+            crazyend()
+        else :
+            print("Oops invalid option.. Try again..")
 
