@@ -28,18 +28,19 @@ def jumpoutwin() :
     print("You escaped the thief!!")
 
 def crazyend() :
+	print("'There is no one in the house', they try to explain as you yell something about the ‘intruder’ getting away. There is an intruder, you know it! Or is there? Do you know it? Did you see him? Did you even see what caused the noise? No, you panicked over nothing, didn’t you? You mutter to yourself, confused and erratic, you’re so deep in the spiral you don’t even protest as they help you into their car, and next thing you know...white walls, white shirt, a nice doctor giving you some white pills. Huh, the psych yard is not that bad.")"
     print("You obtained the Crazy ending")
 
 def bedroomcos() :
     choice = input("choose A[Hide in the closet] B[Jump out the window]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -51,13 +52,13 @@ def bedroomcos() :
 def lookkey() :
     choice = input("choose A[The bag in the corridor] B[Bedroom]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -69,13 +70,13 @@ def lookkey() :
 def tieup() :
     choice = input("choose A[With the curtains] B[With duct tape]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -87,13 +88,13 @@ def tieup() :
 def houseescape() :
     choice = input("choose A[The window] B[The Door]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -106,13 +107,13 @@ def houseescape() :
 def hidethebody() :
     choice = input("choose A[In the garden] B[In the forest]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             gardenwin()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -124,13 +125,13 @@ def hidethebody() :
 def kitchenkab() :
     choice = input("choose A[Call the police] B[Hide the body]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             jailbad()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -142,13 +143,13 @@ def kitchenkab() :
 def bathroomchoice() :
     choice = input("choose A[Escape through the window] B[Call the police]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             generalgood()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -161,25 +162,25 @@ def bathroomchoice() :
 def hidechoice() :
     choice = input("choose A[Hide in the closet] B[Hide in the bathroom] C[Behind a kitchen cabinet] D['If I can't see him, he can't see me'] :")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             bathroomchoice()
     elif choice == "C" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             kitchenkab()
     elif choice == "D" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -191,13 +192,13 @@ def hidechoice() :
 def concusiongun() :
     choice = input("choose A[Run away from the house] B[Tie the thief up]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             houseescape()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
@@ -209,16 +210,16 @@ def concusiongun() :
 def phoneopt() :
     choice = input("choose A[Go hide to call the police] B[Throw it at the thief's head]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             hidechoice()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
+            print("The thief falls on the floor, slightly dazed from your amazing throw. He is still conscious, though, and might wake up any minute now. ")
             concusiongun()
     else :
         print("Oops invaild option.. Try again..")
@@ -227,22 +228,22 @@ def phoneopt() :
 def umbrellaopt() :
     choice = input("choose A[Hit the thief in the head] B[Hit the thief in the legs] C[Open it]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
+            print("The thief falls on the floor, slightly dazed from your amazing throw. He is still conscious, though, and might wake up any minute now.  ")
             concusiongun()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
+            print("After a second’s consideration you swing full force, the umbrella making contact with the intruder's ankles. There’s a loud crack in the air but to your disappointment the sound doesn’t come from the man’s bones, it’s the old umbrella that brakes, the wood splintering and cracking leaving you with more of a sad stick then an efficient tool. Snapping out of whatever daze he was in the intruder lounges at you. Despite your best attempt you’ve been got. How about you try again? ")
             generalbad()
     elif choice == "C" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
+            print("You panic and click the small button on the umbrellas handle, the canopy flying open and temporally hides you from the intruder’s view. While to an out looker you’d look absolutely crazy the move bought you some time to hide, move quickly.")
             hidechoice()
     else :
         print("Oops invaild option.. Try again..")
@@ -252,16 +253,16 @@ def umbrellaopt() :
 def justgun() :
     choice = input("choose A[Shoot the thief] B[Throw it at the thief's head]")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
             print("text")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
+            print("The thief falls on the floor, slightly dazed from your amazing throw. He is still conscious, though, and might wake up any minute now. ")
             concusiongun()
     else :
         print("Oops invaild option.. Try again..")
@@ -269,25 +270,31 @@ def justgun() :
         
         
 def whattobring() :
+	print("You finish watching the movie, the quality was horrible, sure, but the movie itself was actually quite good. You decide it’s time to head to bed, walking up the creaky wooden stairs. You’re not sure why you were so on edge; this place is weirdly cozy. ")
+	print("You’re too tired to do much, so you shower, change, and get into bed. Just as sleep begins to take you...BANG, a loud noise downstairs, was that glass? You’re startled awake, sitting up in the bed. ")
+	print("You decide to go downstairs and see what’s happening. Your heart is just about exploding as you jump to your feet, you’re almost out of the bedroom door when you realize you can’t go empty handed, what if there really is something? You look around the room, there isn’t much, your phone, an old umbrella which was here before you bought the cabin and a gun you bought for protection, but never once have had to use. ")
     choice = input("choose A[A gun] B[A phone] C[An umbrella] :")
     if choice == "A" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
-            justgun()
+            print("You grab the gun from the old safe in your bedroom. The bedroom door let’s out a soft creek as you push it open, sneaking down the stairs proves difficult in the relative dark, but you make it work. You turn the corner and, in the moonlight, you make out a dark figure in your living room, by your window, well what used to be your window, now it’s more of a pile of shards scattered on the floor. ")
+            print("You stare at the man for a second or two, both of you surprised to see the other, but quickly you realize you must act, all you have is the gun. ")
+			justgun()
     elif choice == "B" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
-            phoneopt()
+            print("You grab your phone. The bedroom door let’s out a soft creek as you push it open, sneaking down the stairs proves difficult in the relative dark, but you make it work. You turn the corner and, in the moonlight, you make out a dark figure in your living room by your window, well, what used to be your window, now it’s more of a pile of shards scattered on the floor. ")
+            print("You stare at the man for a second or two, both of you surprised to see the other, but quickly you realize you must act, all you have is your phone. ")
+			phoneopt()
     elif choice == "C" :
-        if StressLvl >= 3 :
+        if StressLvl >= 5 :
             print("Oh no you heart attack")
         else :
-            print("text")
-            umbrellaopt()
+            print("You grab the old umbrella from the corner of your bedroom. The bedroom door let’s out a soft creek as you push it open, sneaking down the stairs proves difficult in the relative dark, but you make it work. You turn the corner and, in the moonlight, you make out a dark figure in your living room, by your window, well what used to be your window, now it’s more of a pile of shards scattered on the floor. ")
+            print("You stare at the man for a second or two, both of you surprised to see the other, but quickly you realize you have to act, all you have is the umbrella. ")
+			umbrellaopt()
     else :
         print("Oops invaild option.. Try again..")
         whattobring()
@@ -299,31 +306,43 @@ while True :
         if contin != "Y" or "y" :
             break
         else :
-            print("intro")
-            StressLvl = 0
+            print("It’s a cold day, mid-January, tired of the socializing during the holidays you decide to spend some time in a secluded cabin. The road there isn’t easy, snowfall and wind-broken branches taking their toll on the forest roads, but eventually you make it there.")
+			print("The sun is slowly lowering in the evening sky as you settle down to watch a movie, an old VHS player and some cassettes saving you as there is barely any service this far in the woods. As you watch the movie, there’s a weird scraping sound. You think you imagined it at first, but no. It’s there, and it’s coming from the window.")
+            StressLvl = 1
             choice = input("choose A[Ignore] B[Investigate] C[Call the police] :")
             if choice == "A" :
-                print("text")
-                whattobring()
+                print("You decide it must be your mind playing tricks after all, or maybe some forest animal searching for food nearby. You try to focus on the movie, but the sound doesn’t stop; it makes you just a little uneasy. ")
+                StressLvl += 1
+				whattobring()
             elif choice == "B" :
-                print("text")
-                whattobring()
+                print("You get up from the couch, slowly walking up to the window. Once you’re close enough you rip open the curtains and…see a snow lowered branch. Guess the night forest makes you antsy, but you feel better knowing the sound isn’t serious. You return to the couch. ")
+                StressLvl -= 1
+				whattobring()
             elif choice == "C" :
+							print("You grab your phone and pray you get lucky and the call will go through. It does, you dial 911 and an operator answers. ")
+			print("It takes police almost an hour to get to you, by then you’ve almost driven yourself crazy, huddling in your bed behind locked doors. You hear the policemen knock, bolting downstairs and ripping the door open, meeting the two men with a panicked look. ")
+			print("It takes them 10 minutes to sweep the cabin during which you wait at the front door. They come back, looking at your disheveled appearance and crazed eyes. ")
                 crazyend()
             else :
                 print("Oops invalid option.. Try again..")
     else :
-        print("intro")
-        StressLvl = 0
+        print("It’s a cold day, mid-January, tired of the socializing during the holidays you decide to spend some time in a secluded cabin. The road there isn’t easy, snowfall and wind-broken branches taking their toll on the forest roads, but eventually you make it there.")
+		print("The sun is slowly lowering in the evening sky as you settle down to watch a movie, an old VHS player and some cassettes saving you as there is barely any service this far in the woods. As you watch the movie, there’s a weird scraping sound. You think you imagined it at first, but no. It’s there, and it’s coming from the window.")
+        StressLvl = 1
         currg = "B"
         choice = input("choose A[Ignore] B[Investigate] C[Call the police] :")
         if choice == "A" :
-            print("text")
-            whattobring()
+            print("You decide it must be your mind playing tricks after all, or maybe some forest animal searching for food nearby. You try to focus on the movie, but the sound doesn’t stop; it makes you just a little uneasy. ")
+            StressLvl += 1
+			whattobring()
         elif choice == "B" :
-            print("text")
-            whattobring()
+            print("You get up from the couch, slowly walking up to the window. Once you’re close enough you rip open the curtains and…see a snow lowered branch. Guess the night forest makes you antsy, but you feel better knowing the sound isn’t serious. You return to the couch. ")
+            StressLvl -= 1
+			whattobring()
         elif choice == "C" :
+			print("You grab your phone and pray you get lucky and the call will go through. It does, you dial 911 and an operator answers. ")
+			print("It takes police almost an hour to get to you, by then you’ve almost driven yourself crazy, huddling in your bed behind locked doors. You hear the policemen knock, bolting downstairs and ripping the door open, meeting the two men with a panicked look. ")
+			print("It takes them 10 minutes to sweep the cabin during which you wait at the front door. They come back, looking at your disheveled appearance and crazed eyes. ")
             crazyend()
         else :
             print("Oops invalid option.. Try again..")
