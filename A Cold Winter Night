@@ -34,13 +34,13 @@ def crazyend() :
 def bedroomcos() :
     choice = input("choose A[Hide in the closet] B[Jump out the window]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("With only seconds to spare, you hide in the closet. The thief runs into the room and your breath becomes constricted. The thief hears your loud breathing and opens the door. The intruder lounges at you. Despite your best attempt you’ve been got. How about you try again? ")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("With only seconds to spare, you make the irrational decision to jump out of the window. The window is large, so you make it outside without any problems. You hesitate slightly on the ledge, but the loud footsteps snap you out of the daydream. You jump, landing unsuccessfully on your leg, but you feel none of it. Pure adrenaline forces you to continue to run away as the thief stays back baffled by the window. ")
@@ -52,13 +52,13 @@ def bedroomcos() :
 def lookkey() :
     choice = input("choose A[The bag in the corridor] B[Bedroom]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("Try to look for the key in the bag in the corridor while pondering the choices, you faintly remember putting the key back into the backpack. Wanting to trust your gut, you run over to the bag you left in the corridor, but it's empty. Sudden flash of memory strikes – you had been scared of losing the keys, so you put them on your nightstand in the bedroom. Loud steps come near you. The intruder lounges at you. Despite your best attempt you’ve been got. How about you try again?")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("While pondering your choices, you faintly remember putting the keys on the nightstand. Realizing that the only choice is to return to the bedroom, you run upstairs. On the nightstand you find the key, but it's too late. The thief's heavy footsteps are ascending the stairs. You can't make it back to the front door safely; you must think quickly. ")
@@ -70,13 +70,13 @@ def lookkey() :
 def tieup() :
     choice = input("choose A[With the curtains] B[With duct tape]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("You decide to tie the thief up with curtains. You struggle to rip the curtains off the rods, but when you succeed, the fabric is too bulky to be used as a rope. Still, you take the chance and continue your mission. Unfortunately, the thief wakes up from his daze and breaks out. Despite your best attempt you’ve been got. How about you try again?")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("The roll of duct tape invites you to take it, so you do. You tie him up, using up all off the roll. Eventually you find your phone and call 911. While the police take their sweet time showing up, the thief struggles against the restraints but has no success escaping.")
@@ -88,13 +88,13 @@ def tieup() :
 def houseescape() :
     choice = input("choose A[The window] B[The Door]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("The shards of broken glass catch your attention again. You don't know where the key to the door is, so you decide to go with the window. The glass breaks under your feet and cuts into them. You push through the pain and try to squeeze through it. Unfortunately, the last pizza slice has cursed you and you get stuck in the window. The thief wakes up from his stupor and, while you are struggling, the intruder lounges at you. Despite your best attempt you’ve been got. How about you try again? ")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("Realizing that the broken window is too small to fit through, you decide to try your luck with the door. You run up to it, the thief slowly waking up in the background. You try to pull it open, but the door is locked.")
@@ -107,13 +107,13 @@ def houseescape() :
 def hidethebody() :
     choice = input("choose A[In the garden] B[In the forest]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("With great effort, you drag the body outside and find a shovel leaning against the wall. You waste no time in digging up some snow, and making a pile on top of the body. You will be long gone before the snow melts and he is found.")
             gardenwin()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("It is hard work, yet you drag the body out of the house in the middle of the night. It's cold and in a second the snow under your feet is colored bright red. The forest is quiet and no prying eyes can be seen. With great effort, you and your victim go further from the cabin. You leave him in the middle of the forest face down in the snow. ")
@@ -126,15 +126,16 @@ def kitchenkab() :
     print("You quickly grab the knife, grasping the handle in your hand. Driven by adrenaline and very low rationality you wait for the intruder to approach and pounce. Everything’s a blur for a couple seconds and then.. you’re safe. The intruder is on the floor the knife clatters down too. But now what? ")
     choice = input("choose A[Call the police] B[Hide the body]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print(" With shaky and slightly blood covered hands you dial 911, and eventually they pick up. ")
             jailbad()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl =+ 1
             print("Looking at the intruder, sudden fear and anxiety overcomes you. Giving yourself up would get you stuck in prison. What would you even do then? You can't go to jail! Only one chance for you now – to hide the body. You start dragging him to the door, yet you stop in the middle of the corridor, the red streaks becoming more apparent as time passes. ")
             hidethebody()
     else :
@@ -144,13 +145,13 @@ def kitchenkab() :
 def bathroomchoice() :
     choice = input("choose A[Escape through the window] B[Call the police]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print(" You rip open the bathroom window which creaks from the lack of use. You really regret all that fast-food you ate on the way to the cabin, but in the end you manage to squeeze through. You don’t look back, just run and run until you find civilization. But you’re safe, that’s what matters. Good job. ")
             generalgood()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print(" Well of divine nature or otherwise no phone is capable of catching a signal in this part of the forest, you try and try, but in the end the time runs out. The door gets broken down and the intruder lounges at you. Despite your best attempt you’ve been got. How about you try again? ")
@@ -163,27 +164,30 @@ def bathroomchoice() :
 def hidechoice() :
     choice = input("choose A[Hide in the closet] B[Hide in the bathroom] C[Behind a kitchen cabinet] D['If I can't see him, he can't see me'] :")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("You take advantage of the time you have running upstairs and into your bedroom, the door doesn’t lock. You look around weighting your options.")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
-            print("text")
+            StressLvl -= 1
+            print("The first door you see is the downstairs bathroom. It feels like a stupid idea when you have locked yourself in there, but stress makes people do crazy things. You look around for further options, but there's only two choices. Either you try to squeeze yourself out of the small window or try to find a signal on the phone. ")
             bathroomchoice()
     elif choice == "C" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl -= 1
             print(" You look around and bolt into the kitchen, ducking behind the counter. You crouch on the floor and think, a metallic glint catches your eye. There is a knife on the counter. ")
             kitchenkab()
     elif choice == "D" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl =+ 1
             print("Your fight or flight response doesn't kick in, instead fear overtakes you, and you can only freeze in your place. In pure shock, you close your eyes and brace for impact or pain. Instead, all you hear is tumbling and a fall, resulting in a loud scream and deafening silence afterwards. You peak open your eyes and are horrified at the screen – the intruder is on the floor, blood seeping through his head. The first thing that pops into your mind is to hide the body.")
             hidethebody()
     else :
@@ -194,15 +198,16 @@ def concusiongun() :
     print("The thief falls on the floor, slightly dazed from your amazing throw. He is still conscious, though, and might wake up any minute now. ")
     choice = input("choose A[Run away from the house] B[Tie the thief up]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("With only seconds of action, you decide to try your best to run away from the house in case the thief wakes up. You stand in the middle of the living room; two choices appear – either go via the door or the broken window.")
             houseescape()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl += 1
             print("With only seconds of action, you decide to tie the thief up so you can call the police calmly afterwards. You glance around the living room, trying to find something to tie him up with. The broken window makes the curtains move in the breeze and the moonlight shines on a roll of duct tape on the table.")
             tieup()
     else :
@@ -212,15 +217,16 @@ def concusiongun() :
 def phoneopt() :
     choice = input("choose A[Go hide to call the police] B[Throw it at the thief's head]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
-            print("text")
+            print("You quickly realize that there's an intruder in your cabin. With little time that you have, you remember you have your phone in hand. Every voice in your head is yelling at you to find a place to hide to call the police. You break out of the frozen stance and scramble, looking for a place to hide.  t")
             hidechoice()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl =+ 1
             print("The thief falls on the floor, slightly dazed from your amazing throw. He is still conscious, though, and might wake up any minute now. ")
             concusiongun()
     else :
@@ -230,21 +236,22 @@ def phoneopt() :
 def umbrellaopt() :
     choice = input("choose A[Hit the thief in the head] B[Hit the thief in the legs] C[Open it]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("The thief falls on the floor, slightly dazed from your amazing throw. He is still conscious, though, and might wake up any minute now.  ")
             concusiongun()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("After a second’s consideration you swing full force, the umbrella making contact with the intruder's ankles. There’s a loud crack in the air but to your disappointment the sound doesn’t come from the man’s bones, it’s the old umbrella that brakes, the wood splintering and cracking leaving you with more of a sad stick then an efficient tool. Snapping out of whatever daze he was in the intruder lounges at you. Despite your best attempt you’ve been got. How about you try again? ")
             generalbad()
     elif choice == "C" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl += 1
             print("You panic and click the small button on the umbrellas handle, the canopy flying open and temporally hides you from the intruder’s view. While to an out looker you’d look absolutely crazy the move bought you some time to hide, move quickly.")
             hidechoice()
     else :
@@ -255,15 +262,16 @@ def umbrellaopt() :
 def justgun() :
     choice = input("choose A[Shoot the thief] B[Throw it at the thief's head]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print(" You aim the gun at the dark silhouette, your hands shake but you manage to press the trigger and…nothing. No shot rings out, no bullet flies. In your genius notion of grabbing the gun you forgot just one thing, it isn’t loaded. Snapping out of whatever daze he was in the intruder lounges at you. Despite your best attempt you’ve been got. How about you try again?")
             generalbad()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl += 1
             print("The thief falls on the floor, slightly dazed from your amazing throw. He is still conscious, though, and might wake up any minute now. ")
             concusiongun()
     else :
@@ -277,23 +285,25 @@ def whattobring() :
 	print("You decide to go downstairs and see what’s happening. Your heart is just about exploding as you jump to your feet, you’re almost out of the bedroom door when you realize you can’t go empty handed, what if there really is something? You look around the room, there isn’t much, your phone, an old umbrella which was here before you bought the cabin and a gun you bought for protection, but never once have had to use. ")
     choice = input("choose A[A gun] B[A phone] C[An umbrella]")
     if choice == "A" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl -= 1
             print("You grab the gun from the old safe in your bedroom. The bedroom door let’s out a soft creek as you push it open, sneaking down the stairs proves difficult in the relative dark, but you make it work. You turn the corner and, in the moonlight, you make out a dark figure in your living room, by your window, well what used to be your window, now it’s more of a pile of shards scattered on the floor. ")
             print("You stare at the man for a second or two, both of you surprised to see the other, but quickly you realize you must act, all you have is the gun. ")
             justgun()
     elif choice == "B" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
             print("You grab your phone. The bedroom door let’s out a soft creek as you push it open, sneaking down the stairs proves difficult in the relative dark, but you make it work. You turn the corner and, in the moonlight, you make out a dark figure in your living room by your window, well, what used to be your window, now it’s more of a pile of shards scattered on the floor. ")
             print("You stare at the man for a second or two, both of you surprised to see the other, but quickly you realize you must act, all you have is your phone. ")
             phoneopt()
     elif choice == "C" :
-        if StressLvl >= 5 :
+        if StressLvl >= 3 :
             print("The stress of your decisions makes you feel uneasy and lightheaded. You clutch your chest as you feel a sharp pain. The world drifts outside your vision. You suffered from a heart attack.")
         else :
+            StressLvl += 1
             print("You grab the old umbrella from the corner of your bedroom. The bedroom door let’s out a soft creek as you push it open, sneaking down the stairs proves difficult in the relative dark, but you make it work. You turn the corner and, in the moonlight, you make out a dark figure in your living room, by your window, well what used to be your window, now it’s more of a pile of shards scattered on the floor. ")
             print("You stare at the man for a second or two, both of you surprised to see the other, but quickly you realize you have to act, all you have is the umbrella. ")
             umbrellaopt()
