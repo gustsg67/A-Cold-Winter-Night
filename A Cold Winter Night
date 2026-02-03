@@ -280,9 +280,9 @@ def justgun() :
         
         
 def whattobring() :
-	print("You finish watching the movie, the quality was horrible, sure, but the movie itself was actually quite good. You decide it’s time to head to bed, walking up the creaky wooden stairs. You’re not sure why you were so on edge; this place is weirdly cozy. ")
-	print("You’re too tired to do much, so you shower, change, and get into bed. Just as sleep begins to take you...BANG, a loud noise downstairs, was that glass? You’re startled awake, sitting up in the bed. ")
-	print("You decide to go downstairs and see what’s happening. Your heart is just about exploding as you jump to your feet, you’re almost out of the bedroom door when you realize you can’t go empty handed, what if there really is something? You look around the room, there isn’t much, your phone, an old umbrella which was here before you bought the cabin and a gun you bought for protection, but never once have had to use. ")
+    print("You finish watching the movie, the quality was horrible, sure, but the movie itself was actually quite good. You decide it’s time to head to bed, walking up the creaky wooden stairs. You’re not sure why you were so on edge; this place is weirdly cozy. ")
+    print("You’re too tired to do much, so you shower, change, and get into bed. Just as sleep begins to take you...BANG, a loud noise downstairs, was that glass? You’re startled awake, sitting up in the bed. ")
+    print("You decide to go downstairs and see what’s happening. Your heart is just about exploding as you jump to your feet, you’re almost out of the bedroom door when you realize you can’t go empty handed, what if there really is something? You look around the room, there isn’t much, your phone, an old umbrella which was here before you bought the cabin and a gun you bought for protection, but never once have had to use. ")
     choice = input("choose A[A gun] B[A phone] C[An umbrella]")
     if choice == "A" :
         if StressLvl >= 3 :
